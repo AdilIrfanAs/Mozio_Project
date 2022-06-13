@@ -11,7 +11,7 @@ from .serializers import GeoSerializer, ProviderSerializer,QuerySerializer
 class ProviderViewSet(viewsets.ModelViewSet):
     """
     This viewset automatically provides `list`, `create`, `retrieve`,
-    `update` and `destroy` actions.
+    `update` and `destroy` actions for Provider.
 
     """
     queryset = Provider.objects.all()
@@ -21,7 +21,7 @@ class ProviderViewSet(viewsets.ModelViewSet):
 class GeoPolygonViewSet(viewsets.ModelViewSet):
     """
     This viewset automatically provides `list`, `create`, `retrieve`,
-    `update` and `destroy` actions.
+    `update` and `destroy` actions for GeoPolyGon.
 
     """
     queryset = GeoPolygon.objects.all()
