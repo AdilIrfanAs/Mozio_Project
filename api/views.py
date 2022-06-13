@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from shapely.geometry import Polygon, Point
 
 from .models import GeoPolygon, Provider
-from .serializers import GeoSerializer, ProviderSerializer
+from .serializers import GeoSerializer, ProviderSerializer,QuerySerializer
 
 
 class ProviderViewSet(viewsets.ModelViewSet):
