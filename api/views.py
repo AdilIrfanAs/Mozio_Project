@@ -42,7 +42,7 @@ def get_polygon(request):
     long = request.GET.get('long', None)
 
     if lat is None or long is None:
-        return HttpResponse('ploygon does not exist against this latitude and longitude')
+        return Response('ploygon does not exist against this latitude and longitude')
 
     point = Point(float(lat), float(long))
     selected_poly = []
